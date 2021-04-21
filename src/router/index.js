@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import ResumeShow from '../views/ResumeShow.vue'
+import ResumeEdit from '../views/ResumeEdit.vue'
 import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
@@ -13,10 +14,14 @@ const routes = [
     component: Home,
   },
   {
-<<<<<<< HEAD
-    path: '/resumes',
+    path: '/resumes/:id',
     name: 'ResumeShow',
     component: ResumeShow
+  },
+  {
+    path: '/resumes/:id/edit',
+    name: 'ResumeEdit',
+    component: ResumeEdit
   },
   {
     path: "/login",
